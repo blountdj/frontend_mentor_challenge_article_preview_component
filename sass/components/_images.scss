@@ -1,0 +1,27 @@
+.drawers {
+  //   height: 35rem;
+  width: 40%;
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.profile_pic {
+  border-radius: 50%;
+  height: 4.5rem;
+  margin-right: 2rem;
+}
+
+.share {
+  margin-left: auto;
+
+  &-icon {
+    background-color: $color-light-grayish-blue;
+    border: 10px solid $color-light-grayish-blue;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:hover .popup {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.container {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  margin: 7rem 0;
+  margin-bottom: 20rem;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.1); }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: 4.5rem; }
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  position: relative; }
+
+html {
+  font-size: 62.5%;
+  font-family: "Manrope", sans-serif;
+  line-height: 1; }
+
+.container {
+  font-size: 1.3rem; }
+
+h1 {
+  color: #48556a;
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem; }
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #6d7f97; }
+
+.name {
+  color: #48556a;
+  font-weight: 700;
+  margin-bottom: 0.25rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+
+.attribution a {
+  color: #3e52a3; }
+
+.drawers {
+  width: 40%;
+  border-radius: 1.2rem 0 0 1.2rem; }
+
+.profile_pic {
+  border-radius: 50%;
+  height: 4.5rem;
+  margin-right: 2rem; }
+
+.share {
+  margin-left: auto; }
+  .share-icon {
+    background-color: #ecf2f8;
+    border: 10px solid #ecf2f8;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer; }
+  .share:hover .popup {
+    opacity: 1; }
+
+.popup {
+  position: absolute;
+  background-color: #48556a;
+  text-transform: uppercase;
+  color: #9eafc2;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  letter-spacing: 2px;
+  right: 0;
+  top: 0;
+  transform: translate(40%, -160%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.2s; }
+  .popup-img {
+    cursor: pointer; }
+  .popup::before {
+    content: "";
+    height: 3rem;
+    width: 3rem;
+    background-color: #48556a;
+    position: absolute;
+    transform: rotate(45deg);
+    z-index: -1;
+    bottom: -1rem; }
